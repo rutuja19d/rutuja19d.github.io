@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <script>
-    function resizeIframe(obj) {
-      console.log(obj);
+    function myFunction() {
+      obj = document.getElementById("iframe1");
       obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
     }
   </script>
@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
-  <body>
+  <body onresize="myFunction()">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="display:none;">

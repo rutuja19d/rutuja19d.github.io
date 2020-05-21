@@ -31,8 +31,14 @@
          /* Standard */;
          }
       </style>
+      <script>
+      function myFunction() {
+        obj = document.getElementById("iframe1");
+        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+      }
+    </script>
    </head>
-   <body class="body-3">
+   <body class="body-3" onresize="myFunction()">
 
       <!-- Navbar -->
       <div class="navbar-notice-holder">
@@ -166,9 +172,11 @@
          <div class="html-embed w-embed w-iframe w-script">
             <!-- LightWidget WIDGET -->
             <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script> -->
-            <iframe src="/Users/shubham/Desktop/website/New/test2.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"  style="width:100%;height: 100%;border:0;overflow:hidden;margin-left: auto; margin-right: auto;margin-bottom:40px;"></iframe>
+            <!-- <iframe src="/Users/shubham/Desktop/website/New/test2.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"  style="width:100%;height: 100%;border:0;overflow:hidden;margin-left: auto; margin-right: auto;margin-bottom:40px;"></iframe> -->
             <!-- <iframe src="http://lightwidget.com/widgets/5ce58882d1f15822bed9b287c551c6fd.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;margin-left: auto; margin-right: auto;margin-bottom: 0px"></iframe> -->
+
          </div>
+         <iframe src="./instagram.html" style="width:100%;margin-top:50px;margin-bottom:50px;" scrolling="no" allowtransparency="true" id="iframe1"></iframe>
       </div>
       <div class="topbottom-bars footer">
           <div class="text-for-bars"><a href="#" class="links-of-bars">THANKS FOR VISITNG! </a></div>
