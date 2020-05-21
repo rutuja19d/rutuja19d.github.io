@@ -14502,7 +14502,8 @@ html.w-mod-js [data-ix=view-more] {
 	.hero---about {
 		height: 667px;
 		padding-bottom: 0;
-		background-position: 80% 50%
+		background-position: 80% 50%;
+		background-image: url('../img/index-mobile.jpeg');
 	}
 	.image---about-me-section {
 		max-height: 667px;
