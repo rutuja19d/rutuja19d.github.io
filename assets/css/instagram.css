@@ -190,7 +190,7 @@ html {
     -o-object-fit: cover;
     object-fit: cover;
     position: absolute;
-    width: 100%
+    width: 99%
 }
 
 .lightwidget--object-fit-fallback .lightwidget__object-fit-wrapper {
