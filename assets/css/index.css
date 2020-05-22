@@ -5977,10 +5977,10 @@ a:hover {
 }
 
 .ashley-janelle-logo {
-	/* width: 170px; */
-	/* height: 60px; */
-	/* background-image: url(https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/5a7bc22069f2390001707f03_logo.png); */
-	/* background-size: contain */
+	/* width: 170px;
+	height: 60px;
+	background-image: url('../img/icons/logo.png');
+	background-size: contain */
 }
 
 .navbar-2 {
@@ -7700,7 +7700,7 @@ a:hover {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	background-image: url(https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/5c943ed2b5264e2ff2e3d03d_019-min.jpg);
+	background-image: url('../img/aboutme.png');
 	background-position: 0 0;
 	background-size: cover;
 	background-repeat: no-repeat
@@ -14503,7 +14503,7 @@ html.w-mod-js [data-ix=view-more] {
 		height: 667px;
 		padding-bottom: 0;
 		background-position: 80% 50%;
-		background-image: url('../img/index-mobile.jpeg');
+		background-image: url('../img/aboutme-mobile.jpg');
 	}
 	.image---about-me-section {
 		max-height: 667px;
