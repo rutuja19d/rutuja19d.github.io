@@ -20,7 +20,8 @@
       <script>
       function myFunction() {
         obj = document.getElementById("iframe1");
-        obj.style.height = document.getElementById("iframe_body").scrollHeight + 'px';
+        var iframeDocHeight = document.getElementById('iframe1').contentWindow.document.getElementsByTagName('body')[0].scrollHeight;
+        obj.style.height = iframeDocHeight + 'px';
         console.log("Called "+ obj.style.height);
       }
     </script>
