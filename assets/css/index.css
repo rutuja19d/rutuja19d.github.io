@@ -615,7 +615,7 @@ fieldset[disabled] .w-select {
 
 .w-radio-input {
 	margin: 3px 0 0 -20px;
-	margin-top: 1px\9;
+	margin-top: 1px;
 	line-height: normal;
 	float: left
 }
@@ -5976,12 +5976,12 @@ a:hover {
 	color: #7fd3e4
 }
 
-.ashley-janelle-logo {
-	/* width: 170px;
+/*.ashley-janelle-logo {
+	 width: 170px;
 	height: 60px;
 	background-image: url('../img/icons/logo.png');
-	background-size: contain */
-}
+	background-size: contain
+} */
 
 .navbar-2 {
 	position: relative;
@@ -11865,9 +11865,9 @@ html.w-mod-js [data-ix=view-more] {
 		-ms-flex-direction: column;
 		flex-direction: column
 	}
-	.image-div---grid {
-		/* background-position: 57% 50% */
-	}
+	/* .image-div---grid {
+		background-position: 57% 50%
+	} */
 	.text-div---for-new-grid {
 		width: 100%;
 		padding-top: 30px;
@@ -11908,12 +11908,12 @@ html.w-mod-js [data-ix=view-more] {
 		-ms-flex: 1 0 auto;
 		flex: 1 0 auto
 	}
-	.section-with-gradient-on-the-right.make-your-brand-unique {
-		/* background-image: url(https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/5ca7582d0adf055d69ec418c_5ca28d0d40d2289310f8a029_partnerhsipssmall-min.jpg), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+	/* .section-with-gradient-on-the-right.make-your-brand-unique {
+		background-image: url(https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/5ca7582d0adf055d69ec418c_5ca28d0d40d2289310f8a029_partnerhsipssmall-min.jpg), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
 		background-image: url(https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/5ca7582d0adf055d69ec418c_5ca28d0d40d2289310f8a029_partnerhsipssmall-min.jpg), linear-gradient(180deg, transparent, transparent);
 		background-position: 34% 50%, 0 0;
-		background-size: cover, auto */
-	}
+		background-size: cover, auto
+	} */
 	.background-for-blog-posts-holder,
 	.im-ashley-pic {
 		background-position: 50% 50%
@@ -12890,9 +12890,9 @@ html.w-mod-js [data-ix=view-more] {
 		-ms-grid-rows: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr
 	}
-	.image-div---grid {
-		/* background-position: 100% 50% */
-	}
+	/* .image-div---grid {
+		background-position: 100% 50%
+	} */
 	.image-div---grid.creative-consulting {
 		background-position: 50% 50%
 	}
@@ -13859,13 +13859,13 @@ html.w-mod-js [data-ix=view-more] {
 		padding-right: 0;
 		font-size: 10px
 	}
-	.ashley-janelle-logo {
-		/* position: static;
+	/* .ashley-janelle-logo {
+		position: static;
 		left: auto;
 		right: 12px;
 		width: 150px;
-		height: 100% */
-	}
+		height: 100%
+	} */
 	.navbar-2 {
 		position: -webkit-sticky;
 		position: sticky;
@@ -13982,14 +13982,14 @@ html.w-mod-js [data-ix=view-more] {
 		margin-top: 0;
 		/* margin-bottom: 30px */
 	}
-	.section-with-gradient-on-the-right.make-your-brand-unique {
-		/* margin-top: 0;
+	/* .section-with-gradient-on-the-right.make-your-brand-unique {
+		margin-top: 0;
 		background-image: url(https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/5ca7582d0adf0527baec418b_5c94f27ae947c37174791130_Cropped%20Pic-min.jpg), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
 		background-image: url(https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/5ca7582d0adf0527baec418b_5c94f27ae947c37174791130_Cropped%20Pic-min.jpg), linear-gradient(180deg, transparent, transparent);
 		background-position: 40% 50%, 0 0;
 		background-size: cover, auto;
-		background-repeat: no-repeat, repeat */
-	}
+		background-repeat: no-repeat, repeat
+	} */
 	.make-your-brand-unique---div-for-text {
 		height: auto;
 		padding-right: 16px;
