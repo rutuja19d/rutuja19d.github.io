@@ -6759,7 +6759,7 @@ a:hover {
 }
 
 .overlapping-header.header.contact-page {
-	color: rgba(255, 255, 255, .7)
+	color: #222222bd;
 }
 
 .overlapping-header.header.about-page {
@@ -8189,16 +8189,16 @@ a:hover {
 
 .hero---contact {
 	display: flex;
-	height: 60vh;
+	height: 80%;
 	-webkit-box-pack: start;
 	-webkit-justify-content: flex-start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
-	-webkit-box-align: center;
+	-webkit-box-align: center;©
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	background-image: url(https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/5c9449ba21f1ed21e4166e11_contacttop-min-2.jpg);
+	background-image: url('../img/contact.JPG');
 	background-position: 50% 0
 }
 
