@@ -44,7 +44,7 @@
               <label>Please tell me more about your inquiry!</label>
               <textarea class="form-control" name="entry.839337160" id="entry.839337160" rows="3" placeholder="Example Text" required></textarea>
             </div>
-            <div class="text-center"><button type="submit" class="btn btn-info mb-2" style="font-size:25px;">Submit</button></div>
+            <button type="submit" class="btn btn-info mb-2" style="font-size:18px; border-radius:0rem;margin-left:10px;">Submit</button>
         </form>
         <iframe name="hidden_iframe" style="display:none;"></iframe>
       </div>
@@ -54,8 +54,14 @@
 
   <script type="text/javascript">
     function submit_func(){
-      swal("Submitted successfully!", "Your message has been sent successfully.  Thank you!", "success");
-      // location.href = "https://skillconnect.github.io";
-    }
+      swal({
+          title: "Submitted successfully!",
+          text: "Your message has been sent successfully.  Thank you!",
+          icon: "success"
+          })
+          .then(() => {
+            location.reload()
+          });
+      }
   </script>
 </html>
