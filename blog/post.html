@@ -18,14 +18,22 @@
 
       <link href="../assets/img/icons/favicon.png" rel="shortcut icon" type="image/x-icon"/>
       <script>
-      function myFunction() {
-        obj2 = document.getElementById("iframe1");
-        var iframeDocHeight = document.getElementById('iframe1').contentWindow.document.getElementsByTagName('body')[0].scrollHeight;
-        obj2.style.height = iframeDocHeight + 'px';
-      }
+        function ResizeFunction() {
+          obj2 = document.getElementById("iframe1");
+          var iframeDocHeight = document.getElementById('iframe1').contentWindow.document.getElementsByTagName('body')[0].scrollHeight;
+          obj2.style.height = iframeDocHeight + 'px';
+        }
+
+        function loadPostIframe()
+        {
+          blogname = window.location.search.split("?")[1];
+          console.log("hi, current blog is "+blogname);
+          document.getElementById("iframe1").src = "./content/"+blogname+".html";
+          ResizeFunction();
+        }
       </script>
    </head>
-   <body class="body-3" onresize="myFunction()" onload="myFunction()">
+   <body class="body-3" onresize="ResizeFunction()" onload="loadPostIframe()">
         <!-- Navbar -->
         <div class="navbar-notice-holder">
            <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar-2 w-nav">
@@ -62,8 +70,10 @@
         </div>
         <!-- Navbar ends -->
         <br><br><br>
-        <div class="instagram-session" style="margin-bottom:50px">
-           <iframe src="./Healthy_Living/p1.html" style="width:100%;border:0px;height:2026px" scrolling="no" id="iframe1"></iframe>
+
+        <!-- Post Section -->
+        <div class="instagram-session">
+           <iframe src="" style="width:100%;border:0px;height:2026px" scrolling="no" id="iframe1"></iframe>
         </div>
 
         <!-- Footer -->
@@ -76,6 +86,7 @@
                 <img src="../assets/img/icons/email.svg" height="26" width="38" alt="" class="social-media-icon-bottom invert"/></a>
               </div>
         </div>
+        <!-- Footer Ends -->
   </body>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5a5d4dc4a0eb5000019ddb02" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://uploads-ssl.webflow.com/5a5d4dc4a0eb5000019ddb02/js/webflow.75d526738.js" type="text/javascript"></script>
