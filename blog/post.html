@@ -20,6 +20,7 @@
       <script>
         function ResizeFunction() {
           obj2 = document.getElementById("iframe1");
+          // console.log(document.getElementById('iframe1').contentWindow.document.getElementsByTagName('body'));
           var iframeDocHeight = document.getElementById('iframe1').contentWindow.document.getElementsByTagName('body')[0].scrollHeight;
           obj2.style.height = iframeDocHeight + 'px';
         }
@@ -29,7 +30,6 @@
           blogname = window.location.search.split("?")[1];
           console.log("hi, current blog is "+blogname);
           document.getElementById("iframe1").src = "./content/"+blogname+".html";
-          ResizeFunction();
         }
       </script>
    </head>
@@ -73,7 +73,7 @@
 
         <!-- Post Section -->
         <div class="instagram-session">
-           <iframe src="" style="width:100%;border:0px;height:2026px" scrolling="no" id="iframe1"></iframe>
+           <iframe src="" style="width:100%;border:0px;height:2026px" scrolling="no" id="iframe1" onload="ResizeFunction()"></iframe>
         </div>
 
         <!-- Footer -->
