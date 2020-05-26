@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/fontastic.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/style.default.css" id="theme-stylesheet">
+
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/js/front.js"></script>
+
+    <!-- Sidebar Widget JS -->
+    <script src="../insta_sidebar.js"></script>
+    <script src="../latest_post_sidebar.js"></script>
+    <script type="text/javascript">
+
+    function image_resize(){
+      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      if(width>700){
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n==-1)
+          {var name = x.split(".")[0];
+            var ext = x.split(".")[1];
+            el.src = name+"_big."+ext;
+          }
+        }
+      else{
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n!=-1)
+          { var before = x.split("_big")[0];
+            var after = x.split("_big")[1];
+            el.src = before+after;
+          }
+        }
+      }
+
+      function load_sidebar(){
+        load_latest_posts()
+        load_insta_images();
+        image_resize()
+      }
+    </script>
+  </head>
+
+<body onload="load_sidebar()" onresize="image_resize()">
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="post blog-post col-lg-8">
+          <div class="container">
+            <div class="post-single">
+              <div class="post-thumbnail"><img src="../../assets/img/blog_pics/sl_p3.jpeg" id="header_image" alt="..." class="img-fluid"></div>
+              <br>
+              <div class="post-details">
+                <!-- <h1 style="font-family:'Playfair Display'">HOW & WHEN to have your coffee without it badly affecting you?</h1> -->
+                <h1 style="font-family:'Playfair Display'">
+                  <!-- Paste your blog title here -->
+                  Sustainable Fashion- What you can do
+                </h1>
+
+                <div class="post-body" style="font-family:Amiri; font-size:21px">
+                  <!-- Paste your blog content here (entire .txt file)-->
+                  <p><h4></h4>
+                  Before getting into what you can do, let’s look at a few things we should know first. <br> Sustainability has now become a buzzword. It is however necessary, that we acknowledge the haziness of the term, how broad, vast it is and yet ever more of an urgent task. To be truly ‘sustainable’, requires radical and transformative measures. It isn’t just a trend that many brands pick up to expand their advertising efforts.
+                  Using recycled materials, going carbon neutral are not enough to make a brand truly sustainable. In order to be genuinely sustainable, brands need to truly transform every aspect of their business.
+                  </p>
+
+                  <p><h4></h4>
+                   Core Priorities are - <br>
+                  <br>
+                  <ul>
+                    <li>Supply Chain Traceability</li>
+                    <li>Addressing Climate Change </li>
+                    <li>Efficient use of water, energy and chemicals</li>
+                    <li> Respectful and secure work environments</li>
+                  </ul>
+                  </p>
+
+                  <p><h4></h4>
+                  Transformational Priorities are - <br>
+                  <br>
+                  <ul>
+                    <li>Sustainable Material Mix</li>
+                    <li> Circular Fashion System </li>
+                    <li> Promotion of better wage system </li>
+                    <li> Fourth Industrial Revolution- Digitalization s</li>
+                  </ul>
+                  </p>
+
+                  <p><h4></h4>
+                   The reason why I mentioned these are to highlight issues that can be addressed. This allows to make mindful choices. Of course we cannot cherry pick two-three issues and call a brand sustainable, but the more aware we are of all angles to sustainability, the more we can demand them, and the faster the fashion industry will have to adopt these ways.
+                  </p>
+
+                  <p><h4></h4>
+                    Now coming to what you can do- <br>
+                  <strong> Be aware of GREENWASHING </strong> <br>
+                  Greenwashing is basically conveying a false impression or providing misleading information about how a company's products are more environmentally sound than they actually are. I talk in detail about greenwashing in another blog post.
+                  For example, H&M’s Conscious Collection. They are not being specific enough in explaining HOW the clothes in this line are more sustainable than the other.
+                  Their page ‘CONSCIOUS RANGE EXPLAINED’ in a short two paragraph ‘explanation’ which is again too vague to buy. All they say is, we use upto 50% recycled material but there are no details on the types of fabrics they are recycling, where are they sourced from, how they are recycled, how dyeing is done, what is the carbon footprint of these products. <br> <br> So, be aware of greenwashing- a common phenomena with the growing trend of sustainable fashion.
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Upcycle </strong> <br>
+                  Next time you go to your tailor for blouse stitching, take a few old clothes with you. Think of, or look of designs it can be transformed into. There are infinite ideas all over the internet for all levels of damaged products, or even clothes that you are bored of because you wore them too many times! </p>
+
+                  <p><h4></h4>
+                   <strong> Slow Fashion </strong> <br>
+                  Now, a lot of us are not really at a place where it’s easier to buy expensive clothes for the planet. You’d rather buy a Rs 799 basic t-shirt than a Rs 2999. But the 799 will last you for a couple of months, now you spend another 799. The cycle is equivalent to buying a 2999 t-shirt and making it last for a whole year. This is difficult to live by, I totally agree. It’s more hormonally satisfying to buy 3 799 t-shirts than one 2999 t-shirt. As a student, it is much more convenient for me to shop at fast fashion prices. Although I strive to shift the labels I choose, I acknowledge that it will take some time for me to wholly move away from cheap options. In that case, I take it upon me to use my clothes for a long long time, and not succumb to unnecessary buying clothes I don’t need. </p>
+
+                  <p><h4></h4>
+                   <strong> Shop Local </strong> <br>
+                  Remember, it is easy to manage production and waste at a local level. Most of the up and coming local brands fundamentally have more ethical ways. Explore your local options and find out about their label. Support them. They are the trend against these big fashion houses. The USP of local shopping is- individuality! </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+        <aside class="col-lg-4">
+
+          <!-- Latest Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Latest Posts</h3>
+            </header>
+            <div class="blog-posts" id="latest_post_section">
+            </div>
+          </div>
+
+
+          <!-- Insta Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Related Instagram Posts</h3>
+            </header>
+            <div class="blog-posts" id="insta_posts_section">
+            </div>
+          </div>
+
+          <!-- Widget [Search Bar Widget]-->
+          <div class="widget search">
+            <header>
+              <h2 class="h6">Get in touch!</h2>
+            </header>
+
+            <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSegPSq7BpjHgptHeozjLFOUfFpcR53fywHZ93KtOCc6F_0opw/formResponse?" target="hidden_iframe" onsubmit="submit_func()">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="entry.2005620554" id="entry.2005620554" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="entry.1045781291" id="entry.1045781291" placeholder="Email: name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="entry.111406355" id="entry.111406355" required>
+                    <option value="" disabled selected>How did you hear about me?</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <!-- <label>Please tell me more about your inquiry!</label> -->
+                  <textarea class="form-control" name="entry.839337160" id="entry.839337160" rows="3" placeholder="What's on your mind" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info mb-2" style="font-size:18px; border-radius:0rem;margin-left:10px;">Submit</button>
+            </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

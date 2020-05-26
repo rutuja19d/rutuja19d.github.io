@@ -26,64 +26,87 @@
     <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/js/front.js"></script>
 
     <!-- Sidebar Widget JS -->
-    <script src="./insta_sidebar.js"></script>
-    <script src="./latest_post_sidebar.js"></script>
+    <script src="../insta_sidebar.js"></script>
+    <script src="../latest_post_sidebar.js"></script>
     <script type="text/javascript">
+
+    function image_resize(){
+      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      if(width>700){
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n==-1)
+          {var name = x.split(".")[0];
+            var ext = x.split(".")[1];
+            el.src = name+"_big."+ext;
+          }
+        }
+      else{
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n!=-1)
+          { var before = x.split("_big")[0];
+            var after = x.split("_big")[1];
+            el.src = before+after;
+          }
+        }
+      }
+
       function load_sidebar(){
         load_latest_posts()
         load_insta_images();
+        image_resize()
       }
     </script>
   </head>
 
-  <body onload="load_sidebar()">
+<body onload="load_sidebar()" onresize="image_resize()">
     <div class="container">
       <div class="row">
         <!-- Latest Posts -->
         <main class="post blog-post col-lg-8">
           <div class="container">
             <div class="post-single">
-              <div class="post-thumbnail"><img src="../../assets/img/blog/Post 1.jpg" alt="..." class="img-fluid"></div>
+              <div class="post-thumbnail"><img src="../../assets/img/blog_pics/sl_p2.jpg" id="header_image" alt="..." class="img-fluid"></div>
               <br>
               <div class="post-details">
-                <h1 style="font-family:'Playfair Display'">HOW & WHEN to have your coffee without it badly affecting you?</h1>
+                <!-- <h1 style="font-family:'Playfair Display'">HOW & WHEN to have your coffee without it badly affecting you?</h1> -->
+                <h1 style="font-family:'Playfair Display'">
+                  <!-- Paste your blog title here -->
+                  Who made your clothes & why is that important?
+                </h1>
 
                 <div class="post-body" style="font-family:Amiri; font-size:21px">
-                  <p>
-                    <h4></h4>
-                    Consumption of coffee specially in young adults has increased drastically in India. Coffee is : high in antioxidants, linked to reduced risk of many diseases, increases brain activity, boosts metabolism.<br>
-                    However these effects are short term. When you drink coffee everyday, you build a tolerance to it and effects can be less powerful.
-                    Ill effects include addiction, tiredness, irritability, increase in cholesterol levels, early aging.
-                  </p>
-                  <p>
-                    <h4></h4>
-                    The most basic rule : DO NOT add anything unhealthy to your coffee like artificial creamer. Sugar is also considered to be bad when consumed with coffee. But in light of practicality, a little bit of sugar wouldn't be the end of the world.
-                  </p>
-                  <p>
-                    <h4>How to have coffee?</h4>
-                    Brew your coffee. (If you don’t have paper filters, buy them right now! They are readily available.)
-                    Unfiltered coffee contains cafestol which increase cholesterol levels to another extent.
+                  <!-- Paste your blog content here (entire .txt file)-->
+                  <p><h4></h4>
+                  Here are some statistics that will blow your mind-
+                  <br>
+                  -The fashion industry is the second largest polluter in the world, after oil. <br>
+                  -Fashion Industry contributes 10% of global greenhouse gas emissions due to its long supply chains and energy intensive production.<br>
+                  -Nearly 20% of global waste water is produced by the fashion industry
+                  20,000 litres is the amount of water needed to produce one kilogram of cotton; equivalent to a single t-shirt and pair of jeans. (Using recycled cotton saves 20,000 litres of water per kilogram of cotton, a water-intensive crop.)<br>
+                  -It takes more than 5,000 gallons of water to manufacture just a T-shirt and a pair of jeans (that’s more than 18927 litres of water for one ‘basic’ outfit!)<br>
+                  -A few communities have textile recycling programs, about 85% of this waste goes to landfills where it occupies about 5% of landfill space and the amount is growing. <br>
+                  -Up to 95% of the textiles that are land filled each year could be recycled
                   </p>
 
-                  <p>
-                    <h4>WHEN is the best time to have coffee and WHY?</h4>
-                    This is the most important part.<br>
-                    <strong>NEVER have it as the first thing in the morning.</strong>
-                    Cortisol is released three times a day. Most prominently in the morning. It’s a hormone released in response to stress & low blood glucose.
-                    When consumed at times cortisol is released, the body produces less of it and relies on caffeine to compensate.
-                    <br>
-                    <i>Release generally : 8-9 am, 12-1 pm, 5-6pm</i><br>
-                    So have your coffee accordingly between 10 and noon or 2 to 4.
+                  <p><h4></h4>
+                   <strong> *The fashion industry emits more carbon than international flights and maritime shipping combined*. READ THAT AGAIN. </strong>
                   </p>
 
-                  <p>
-                    <h4>How many cups of coffee?</h4>
-                    Typically 2-3 cups of coffee is considered to be safe. But try to not have more than 2.
+                  <p><h4></h4>
+                    Not to mention the modern slavery, working conditions and living wages of garnet workers in developing countries, where fast fashion brands manufacture their clothes and pollute our waters with toxic chemicals.
+                  I read a New York Times article the other day. A lot of websites give statistics and highlight issues of modern slavery, but this NY times article has published some personal stories of a few garment workers around the world and their struggles.
                   </p>
 
-                  <p>
-                    <h4>Coffee for weight loss:</h4>
-                    Black coffee without sugar is an effective pre workout drink. Consuming black coffee before workout aids in burning more fat during the workout session. It also helps in enhancing metabolism which thus allowing you to burn more fat throughout the day.
+                  <p><h4></h4>
+                    These stories, these faces, and so many more, along with the environmental footprint of the fashion industry-is exactly why you should care about who made your clothes.
+                  </p>
+
+                  <p><h4></h4>
+                   There are so many upcoming brands that are addressing these problems in their own capacity. Unless we ask the right questions, we won’t find them.
                   </p>
                 </div>
 

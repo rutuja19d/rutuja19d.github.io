@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/fontastic.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/style.default.css" id="theme-stylesheet">
+
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/js/front.js"></script>
+
+    <!-- Sidebar Widget JS -->
+    <script src="../insta_sidebar.js"></script>
+    <script src="../latest_post_sidebar.js"></script>
+    <script type="text/javascript">
+
+    function image_resize(){
+      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      if(width>700){
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n==-1)
+          {var name = x.split(".")[0];
+            var ext = x.split(".")[1];
+            el.src = name+"_big."+ext;
+          }
+        }
+      else{
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n!=-1)
+          { var before = x.split("_big")[0];
+            var after = x.split("_big")[1];
+            el.src = before+after;
+          }
+        }
+      }
+
+      function load_sidebar(){
+        load_latest_posts()
+        load_insta_images();
+        image_resize()
+      }
+    </script>
+  </head>
+
+<body onload="load_sidebar()" onresize="image_resize()">
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="post blog-post col-lg-8">
+          <div class="container">
+            <div class="post-single">
+              <div class="post-thumbnail"><img src="../../assets/img/blog_pics/p3.jpg" id="header_image" alt="..." class="img-fluid"></div>
+              <br>
+              <div class="post-details">
+                <!-- <h1 style="font-family:'Playfair Display'">HOW & WHEN to have your coffee without it badly affecting you?</h1> -->
+                <h1 style="font-family:'Playfair Display'">
+                  <!-- Paste your blog title here -->
+                  20 FAT LOSS FOODS IN EVERY INDIAN KITCHEN
+                </h1>
+
+                <div class="post-body" style="font-family:Amiri; font-size:21px">
+                  <!-- Paste your blog content here (entire .txt file)-->
+                  <p><h4></h4>
+                   Many people ask me about what to eat in the second half of the day, other than our basic 3 'main' meals that we have known.<BR>
+                  It is quite necessary that you include any of these throughout your day in your lunch or dinner and/or pre/post it if you are on your journey to a fat loss or rather just a healthy lifestyle. Just grab the easy ones to carry if you are traveling for work/college!
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Moong Daal </strong> <br> -Vitamin A,B,C,E, potassium, calcium, iron <br> -Not necessary to have it during lunch or dinner. Mix it with spinach to make a soup or soak overnight and mix with veggies to have as sprouts
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Walnuts </strong> <br> -Better than all other nuts- Brain health, antioxidants, vitamins, omega 3 fatty acid, manganese, copper, protein, fibre
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Spinach </strong> <br>
+                  -Very low in calories, vitamin A,K, calcium, iron, fibre, protein, zinc <br> -Keeps digestive tract on track <br>
+                  -Better than all other nuts- Brain health, antioxidants, vitamins, omega 3 fatty acid, manganese, copper, protein, fibre
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Bitter gourd (karela)  </strong> <br>
+                  -Boosts stamina, low in calories, rich in nutrients
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Bitter gourd (karela)  </strong> <br>
+                  -Boosts stamina, low in calories, rich in nutrients
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Almonds </strong> <br>
+                  -Keeps sugar level in check, great stimulant so helps in weight loss
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Apple </strong> <br>
+                  -Highest fibre, boosts metabolism and helps fat loss
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Beans </strong> <br>
+                  -Fibre and protein, great for cardiovascular system, maintains bone health, helps in weight loss, healthy digestion
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Cauliflower </strong> <br>
+                  -Very high fibre
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Cinnamon </strong> <br>
+                  -Half teaspoon post meal prevents spike in insulin
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Turmeric </strong> <br>
+                  -Keeps fatty tissue at minimum
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Radish </strong> <br>
+                  -Again high fibre food
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Garlic </strong> <br>
+                  -Fights high BP, cholesterol, blood sugar level
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Lentils </strong> <br>
+                  -Protein and fibre
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Bananas </strong> <br>
+                  -BEST for pre or post workout to reduce bad fat
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Tomatoes </strong> <br>
+                  -Low in calories, acts as a detoxifier
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Olive Oil  </strong> <br>
+                  -Prevent any chance of diabetes ever, improves overall health like nothing other
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Cabbage </strong> <br>
+                  -VERY low in calories, best weight loss snack high in fibre, fights ageing
+                  </p>
+
+                  <p><h4></h4>
+                   <strong> Eggs </strong> <br>
+                  -Powerhouse of protein
+                  </p>
+
+                   <strong> Coffee </strong> <br>
+                  -Black coffee before workout boosts metabolism
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+        <aside class="col-lg-4">
+
+          <!-- Latest Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Latest Posts</h3>
+            </header>
+            <div class="blog-posts" id="latest_post_section">
+            </div>
+          </div>
+
+
+          <!-- Insta Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Related Instagram Posts</h3>
+            </header>
+            <div class="blog-posts" id="insta_posts_section">
+            </div>
+          </div>
+
+          <!-- Widget [Search Bar Widget]-->
+          <div class="widget search">
+            <header>
+              <h2 class="h6">Get in touch!</h2>
+            </header>
+
+            <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSegPSq7BpjHgptHeozjLFOUfFpcR53fywHZ93KtOCc6F_0opw/formResponse?" target="hidden_iframe" onsubmit="submit_func()">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="entry.2005620554" id="entry.2005620554" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="entry.1045781291" id="entry.1045781291" placeholder="Email: name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="entry.111406355" id="entry.111406355" required>
+                    <option value="" disabled selected>How did you hear about me?</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <!-- <label>Please tell me more about your inquiry!</label> -->
+                  <textarea class="form-control" name="entry.839337160" id="entry.839337160" rows="3" placeholder="What's on your mind" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info mb-2" style="font-size:18px; border-radius:0rem;margin-left:10px;">Submit</button>
+            </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/fontastic.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/style.default.css" id="theme-stylesheet">
+
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/js/front.js"></script>
+
+    <!-- Sidebar Widget JS -->
+    <script src="../insta_sidebar.js"></script>
+    <script src="../latest_post_sidebar.js"></script>
+    <script type="text/javascript">
+
+    function image_resize(){
+      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      if(width>700){
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n==-1)
+          {var name = x.split(".")[0];
+            var ext = x.split(".")[1];
+            el.src = name+"_big."+ext;
+          }
+        }
+      else{
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n!=-1)
+          { var before = x.split("_big")[0];
+            var after = x.split("_big")[1];
+            el.src = before+after;
+          }
+        }
+      }
+
+      function load_sidebar(){
+        load_latest_posts()
+        load_insta_images();
+        image_resize()
+      }
+    </script>
+  </head>
+
+<body onload="load_sidebar()" onresize="image_resize()">
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="post blog-post col-lg-8">
+          <div class="container">
+            <div class="post-single">
+              <div class="post-thumbnail"><img src="../../assets/img/blog_pics/sl_p1.jpg" id="header_image" alt="..." class="img-fluid"></div>
+              <br>
+              <div class="post-details">
+                <!-- <h1 style="font-family:'Playfair Display'">HOW & WHEN to have your coffee without it badly affecting you?</h1> -->
+                <h1 style="font-family:'Playfair Display'">
+                  <!-- Paste your blog title here -->
+                  The myth about ‘SUSTAINABILITY’
+                </h1>
+
+                <div class="post-body" style="font-family:Amiri; font-size:21px">
+                  <!-- Paste your blog content here (entire .txt file)-->
+                  <p><h4></h4>
+                   SUSTAINABILITY is a broad concept and it is difficult to associate an objective definition to it. Essentially, it means the ability to exist constantly, a process that is maintained at a certain level for as long as it is required. Sustainable Development is the process of meeting the needs of the present without compromising the ability of the future generations to meet their own needs- the definition we have been learning in textbooks for ages. But the tangible aspects of sustainability are less understood.
+                  </p>
+
+                  <p><h4></h4>
+                   The myth about sustainability is this- that environmentally friendly products are unattractive.
+                  <strong> The idea that a product would have had to compromise a star element in it’s making for it to be ‘sustainable’, ‘eco-friendly’. </strong>
+                  This mindset makes sustainable products unappealing. ‘Upcycled’ sounds second hand. ‘Eco-friendly’ sounds slow.
+                  </p>
+
+                  <p><h4></h4>
+                    When I was a model at Lakmé Fashion Week, during the private viewing show (a show between designers and buyers only), I wore these beautiful fabrics created with upcycled material, that costed lakhs and lakhs of rupees. Attractive and appealing in every form, they were absolutely stunning. All the designers and buyers were talking about where cotton was sourced from, zero waste production collection was glared at, gowns upcycled from sarees were bid on, all because it was LFW. If I take you to a local store that upcycles your old clothes into new designs, would you buy it? Or would you rather shop from a fast fashion brand for ‘new’ clothes and put your old ones in a bag to give them away. It’s the state of mind. 
+                  </p>
+
+                  <p><h4></h4>
+                    Brands need to use their position to change the idea behind sustainability. Today, the dig is for depth, story-telling, customisation. On the other end, as customers we need to take conscious efforts to overlook the compromised idea of upcycling and recycling, weigh the need for today against a frequent hour long of dopamine boost.
+                  </p>
+
+                  <p><h4></h4>
+                   Another myth I want to talk about is- Sustainability means lowering our standard of living. Paul Hawken, an American environmentalist, entrepreneur, author says “Once we start to organize ourselves and innovate within that mind-set, the breakthroughs are extraordinary. They will allow us to achieve greatly superior rates of resource productivity, which in turn allow us to be prosperous, fed, clad, secure”
+                  It means we have do more with less. Technology and public policy will keep evolving, defining the specifics of being sustainable, and bringing us closer to our sustainable living goals. For embracing it truly, we need to first learn to let go of common ideologies and understand our commitment to sustainability.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+        <aside class="col-lg-4">
+
+          <!-- Latest Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Latest Posts</h3>
+            </header>
+            <div class="blog-posts" id="latest_post_section">
+            </div>
+          </div>
+
+
+          <!-- Insta Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Related Instagram Posts</h3>
+            </header>
+            <div class="blog-posts" id="insta_posts_section">
+            </div>
+          </div>
+
+          <!-- Widget [Search Bar Widget]-->
+          <div class="widget search">
+            <header>
+              <h2 class="h6">Get in touch!</h2>
+            </header>
+
+            <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSegPSq7BpjHgptHeozjLFOUfFpcR53fywHZ93KtOCc6F_0opw/formResponse?" target="hidden_iframe" onsubmit="submit_func()">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="entry.2005620554" id="entry.2005620554" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="entry.1045781291" id="entry.1045781291" placeholder="Email: name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="entry.111406355" id="entry.111406355" required>
+                    <option value="" disabled selected>How did you hear about me?</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <!-- <label>Please tell me more about your inquiry!</label> -->
+                  <textarea class="form-control" name="entry.839337160" id="entry.839337160" rows="3" placeholder="What's on your mind" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info mb-2" style="font-size:18px; border-radius:0rem;margin-left:10px;">Submit</button>
+            </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

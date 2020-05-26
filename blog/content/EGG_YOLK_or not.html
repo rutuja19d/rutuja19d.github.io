@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/fontastic.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/style.default.css" id="theme-stylesheet">
+
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/js/front.js"></script>
+
+    <!-- Sidebar Widget JS -->
+    <script src="../insta_sidebar.js"></script>
+    <script src="../latest_post_sidebar.js"></script>
+    <script type="text/javascript">
+
+    function image_resize(){
+      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      if(width>700){
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n==-1)
+          {var name = x.split(".")[0];
+            var ext = x.split(".")[1];
+            el.src = name+"_big."+ext;
+          }
+        }
+      else{
+        var el = document.getElementById("header_image");
+        var x = el.src;
+        var n = x.search("big");
+        if(n!=-1)
+          { var before = x.split("_big")[0];
+            var after = x.split("_big")[1];
+            el.src = before+after;
+          }
+        }
+      }
+
+      function load_sidebar(){
+        load_latest_posts()
+        load_insta_images();
+        image_resize()
+      }
+    </script>
+  </head>
+
+<body onload="load_sidebar()" onresize="image_resize()">
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="post blog-post col-lg-8">
+          <div class="container">
+            <div class="post-single">
+              <div class="post-thumbnail"><img src="../../assets/img/blog_pics/p5.jpg" id="header_image" alt="..." class="img-fluid"></div>
+              <br>
+              <div class="post-details">
+                <!-- <h1 style="font-family:'Playfair Display'">HOW & WHEN to have your coffee without it badly affecting you?</h1> -->
+                <h1 style="font-family:'Playfair Display'">
+                  <!-- Paste your blog title here -->
+                  To throw the EGG YOLK or not is the question
+                </h1>
+
+                <div class="post-body" style="font-family:Amiri; font-size:21px">
+                  <!-- Paste your blog content here (entire .txt file)-->
+                  <p><h4></h4>
+                  We have always been told through various sources that the YOLK is to be thrown out, while consuming egg in any form. I myself have included eggs in my diet but always without the yolk.
+                  However, after some deep research, I have realized the extent of myths we are SO buried in.
+                  </p>
+
+                  <p><h4></h4>
+                  Popular beliefs about yolk:<br>
+                  -Has insane capacity of increasing our cholesterol thus causing heart dieases.<br>
+                  -Being fattening
+                  </p>
+
+                  <p><h4></h4>
+                  The hard boiled truth:
+                  EGG WHITES PROVIDE 7% PROTEIN, WHILE WHOLE EGGS PROVIDE 10.
+                  </p>
+
+                  <p><h4></h4>
+                   Yolks are great sources of:<br>
+                  Vitmain A (Good for skin)<br>
+                  Vitmain B (for energy)<br>
+                  Choline (Supports brain health, muscles)
+                  </p>
+
+                  <p><h4></h4>
+                  <strong>About the fat:</strong><br>
+                  The saturated fats in the yolk are the ones you want, when consumed in right proportion.<br>
+                  They are EXTREMELY necessary in hormone production.<br>
+                  Also very necessary in body’s absorption of vitamins and minerals.<br>
+                  As long as your diet is maintained on the healthy scale, consumption of overall egg WONT cause weight gain.
+                  </p>
+
+                  <p><h4></h4>
+                  <strong>About the cholesterol:</strong><br>
+                  There are two type LDL and HDL. <br>
+                  LDL is the ‘bad’ one (Blocks blood vessels, restricting blood flow)<br>
+                  HDL is the one present in the egg yolk. (Rich in vitamins, iron, provides calories necessary and fat required for hormone production)  So wanting to cut down an egg yolk just to avoid fat, whilst consuming other avoidable foods (Example energy drinks or juices) is just unreasonable! <br>
+                  AS LONG AS you are eating well and choosing the right sources of fat, whole eggs deserve to be eaten.<br>
+                  Although if you are still extremely conscious about protein and your gym routines, you can limit it in comparison. This is what I am doing at the moment. For example, if you are consuming 2 eggs, have one yolk. </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+        <aside class="col-lg-4">
+
+          <!-- Latest Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Latest Posts</h3>
+            </header>
+            <div class="blog-posts" id="latest_post_section">
+            </div>
+          </div>
+
+
+          <!-- Insta Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Related Instagram Posts</h3>
+            </header>
+            <div class="blog-posts" id="insta_posts_section">
+            </div>
+          </div>
+
+          <!-- Widget [Search Bar Widget]-->
+          <div class="widget search">
+            <header>
+              <h2 class="h6">Get in touch!</h2>
+            </header>
+
+            <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSegPSq7BpjHgptHeozjLFOUfFpcR53fywHZ93KtOCc6F_0opw/formResponse?" target="hidden_iframe" onsubmit="submit_func()">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="entry.2005620554" id="entry.2005620554" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="entry.1045781291" id="entry.1045781291" placeholder="Email: name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="entry.111406355" id="entry.111406355" required>
+                    <option value="" disabled selected>How did you hear about me?</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <!-- <label>Please tell me more about your inquiry!</label> -->
+                  <textarea class="form-control" name="entry.839337160" id="entry.839337160" rows="3" placeholder="What's on your mind" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info mb-2" style="font-size:18px; border-radius:0rem;margin-left:10px;">Submit</button>
+            </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
