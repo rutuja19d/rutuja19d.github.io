@@ -32,24 +32,25 @@
 
     function image_resize(){
       var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      var el = document.getElementById("header_image");
+      var x = el.src;
+      var baseurl = x.split("blog_pics/")[0];
+      var filename = x.split("blog_pics/")[1];
+
       if(width>700){
-        var el = document.getElementById("header_image");
-        var x = el.src;
-        var n = x.search("big");
+        var n = filename.search("big");
         if(n==-1)
-          {var name = x.split(".")[0];
-            var ext = x.split(".")[1];
-            el.src = name+"_big."+ext;
+          {var name = filename.split(".")[0];
+            var ext = filename.split(".")[1];
+            el.src = baseurl+"blog_pics/"+name+"_big."+ext;
           }
         }
       else{
-        var el = document.getElementById("header_image");
-        var x = el.src;
-        var n = x.search("big");
+        var n = filename.search("big");
         if(n!=-1)
-          { var before = x.split("_big")[0];
-            var after = x.split("_big")[1];
-            el.src = before+after;
+          { var before = filename.split("_big")[0];
+            var after = filename.split("_big")[1];
+            el.src = baseurl+"blog_pics/"+before+after;
           }
         }
       }
