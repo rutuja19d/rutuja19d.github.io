@@ -13,13 +13,19 @@
         </script>
         <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
         <link href="../img/icons/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+        <script type="text/javascript">
+          function resizeIframe(iframe) {
+            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+          }
+        </script>
     </head>
     <body>
 
         <div class="content---about-me">
             <div class="about-me-div">
                 <div class="image-div---about-me">
-                    <img src="../img/about/about1.png" class="image---about-me-section"/>
+                    <!-- <img src="../img/about/about1.png" class="image---about-me-section"/> -->
+                    <iframe src="./slider1.html" width="100%" onload="resizeIframe(this)" style="border:0px"></iframe>
                 </div>
                 <div class="text-holder">
                     <div class="overlapping-header">Youth Ambassador</div>

@@ -20,10 +20,16 @@
       <link href="./assets/img/icons/favicon.png" rel="shortcut icon" type="image/x-icon"/>
 
       <script>
-        function ResizeFunction(name) {
+        function ResizeFunction() {
+          var name="iframe1"
           var obj = document.getElementById(name);
           var iframeDocHeight = obj.contentWindow.document.getElementsByTagName('body')[0].scrollHeight;
           obj.style.height = iframeDocHeight + 'px';
+
+          name = "iframe2"
+          obj2 = document.getElementById(name);
+          iframeDocHeight = obj.contentWindow.document.getElementsByTagName('body')[0].scrollHeight;
+          obj2.style.height = iframeDocHeight + 'px';
         }
       </script>
    </head>
@@ -76,7 +82,7 @@
                             <a data-w-tab="All Categories" class="tab-link---blog w-inline-block w-tab-link w--current"><div class="category-name">all categories</div></a>
                             <a data-w-tab="Tech" class="tab-link---blog w-inline-block w-tab-link"><div class="category-name">HEALTHY LIVING</div></a>
                             <a data-w-tab="Beauty" class="tab-link---blog w-inline-block w-tab-link"><div class="category-name">SUSTAINABLE LIVING</div></a>
-                            <a data-w-tab="Travel" class="tab-link---blog w-inline-block w-tab-link"><div class="category-name">STUDENT EXCHANGE</div></a>
+                            <a data-w-tab="Travel" class="tab-link---blog w-inline-block w-tab-link" onclick="ResizeFunction()"><div class="category-name">STUDENT EXCHANGE</div></a>
                         </div>
                         <div class="tabs-content w-tab-content">
                             <div data-w-tab="All Categories" id="All Categories" class="w-tab-pane w--tab-active">
@@ -341,8 +347,8 @@
                                 <div class="collection-list-wrapper---blog-page travel w-dyn-list">
                                     <div class="blog-category travel w-dyn-items w-row">
                                       <!-- Paste STUDENT EXCHANGE blog posts above this line -->
-                                      <iframe src="./assets/utility/Student_Exchange.html" style="width:90%;border:0px" id="iframe1" onload="ResizeFunction('iframe1')" onresize="ResizeFunction('iframe1')"></iframe>
-                                      <iframe src="./assets/utility/slider.html" style="width:90%;border:0px;margin-top:40px" id="iframe2" onload="ResizeFunction('iframe2')" onresize="ResizeFunction('iframe2')"></iframe>
+                                      <iframe src="./assets/utility/Student_Exchange.html" style="width:90%;border:0px" id="iframe1"></iframe>
+                                      <iframe src="./assets/utility/slider.html" style="width:90%;border:0px;margin-top:40px" id="iframe2"></iframe>
                                     </div>
                                 </div>
                             </div>
