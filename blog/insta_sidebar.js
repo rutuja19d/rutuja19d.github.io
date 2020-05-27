@@ -37,7 +37,7 @@ function load_insta_images(){
     src = posts[key]["img_src"];
     caption = posts[key]["caption"];
 
-    var new_post=`<a href="{}">
+    var new_post=`<a href="{}" target="_blank">
                     <div class="item d-flex align-items-center">
                       <div class="image"><img src="{}" alt="..." class="img-fluid"></div>
                       <div class="title"><strong>{}</strong></div>

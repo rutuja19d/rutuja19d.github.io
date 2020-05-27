@@ -29,48 +29,34 @@
     <script src="../insta_sidebar.js"></script>
     <script src="../latest_post_sidebar.js"></script>
     <script type="text/javascript">
-
-    function image_resize(){
-      var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-      var el = document.getElementById("header_image");
-      var x = el.src;
-      var baseurl = x.split("blog_pics/")[0];
-      var filename = x.split("blog_pics/")[1];
-
-      if(width>700){
-        var n = filename.search("big");
-        if(n==-1)
-          {var name = filename.split(".")[0];
-            var ext = filename.split(".")[1];
-            el.src = baseurl+"blog_pics/"+name+"_big."+ext;
-          }
-        }
-      else{
-        var n = filename.search("big");
-        if(n!=-1)
-          { var before = filename.split("_big")[0];
-            var after = filename.split("_big")[1];
-            el.src = baseurl+"blog_pics/"+before+after;
-          }
-        }
-      }
-
       function load_sidebar(){
         load_latest_posts()
         load_insta_images();
-        image_resize()
       }
     </script>
+
+
+    <style>
+      #header_image{
+        content:url("../../assets/img/blog_pics/sl_p2_big.jpg");
+      }
+
+      @media only screen and (max-width: 600px) {
+        #header_image{
+          content:url("../../assets/img/blog_pics/sl_p2.jpg");
+        }
+      }
+    </style>
   </head>
 
-<body onload="load_sidebar()" onresize="image_resize()">
+<body onload="load_sidebar()">
     <div class="container">
       <div class="row">
         <!-- Latest Posts -->
         <main class="post blog-post col-lg-8">
           <div class="container">
             <div class="post-single">
-              <div class="post-thumbnail"><img src="../../assets/img/blog_pics/sl_p2.jpg" id="header_image" alt="..." class="img-fluid"></div>
+              <div class="post-thumbnail"><img src="" id="header_image" alt="..." class="img-fluid"></div>
               <br>
               <div class="post-details">
                 <!-- <h1 style="font-family:'Playfair Display'">HOW & WHEN to have your coffee without it badly affecting you?</h1> -->

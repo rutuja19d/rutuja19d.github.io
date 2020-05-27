@@ -18,6 +18,17 @@
             iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
           }
         </script>
+
+        <style>
+          #slider2{
+            height: 700px;
+          }
+          @media only screen and (max-width: 600px) {
+            #slider2{
+              height: 350px;
+            }
+          }
+        </style>
     </head>
     <body>
 
@@ -61,7 +72,7 @@
               <div class="overlapping-sub-h sub-header about-page">Exchange</div>
           </div>
       </div>
-
+      <br><br><br>
 
         <div class="content---about-me">
             <div class="about-me-div">
@@ -117,8 +128,17 @@
         </div>
         <div class="grid---about-me">
             <h1 class="script-font-used about-me">Memories</h1>
-            <!-- <img src="../img/about/support.JPG"/> -->
-            <iframe src="./assets/utility/slider2.html" width="100%" height="700px" style="border:0px" scrolling="no"></iframe>
+            <iframe src="./assets/utility/slider2.html" width="100%" style="border:0px" scrolling="no" id="slider2"></iframe>
+        </div>
+
+        <div class="topbottom-bars footer">
+            <div class="text-for-bars"><a href="#" class="links-of-bars">THANKS FOR VISITNG! </a></div>
+            <div class="social-meda-wrapper-bottom">
+              <a href="https://www.instagram.com/thebasic_culture/" target="_blank" class="social-meddia-lblock-bottom w-inline-block">
+                <img src="./assets/img/icons/insta.svg" height="25" alt="" class="social-media-icon-bottom invert"/></a>
+              <a href="mailto:rutuja19deorey@gmail.com" class="social-meddia-lblock-bottom w-inline-block">
+                <img src="./assets/img/icons/email.svg" height="26" width="38" alt="" class="social-media-icon-bottom invert"/></a>
+              </div>
         </div>
         <script
             src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5a5d4dc4a0eb5000019ddb02"
