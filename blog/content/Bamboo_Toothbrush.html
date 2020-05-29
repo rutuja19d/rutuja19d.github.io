@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/fontastic.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/css/style.default.css" id="theme-stylesheet">
+
+    <!-- JavaScript files-->
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/blog/1-2-1/js/front.js"></script>
+
+    <!-- Sidebar Widget JS -->
+    <script src="../insta_sidebar.js"></script>
+    <script src="../latest_post_sidebar.js"></script>
+    <script type="text/javascript">
+      function load_sidebar(){
+        load_latest_posts()
+        load_insta_images();
+      }
+    </script>
+
+
+    <style>
+      /* Header Image for Blog post */
+      #header_image{
+        content:url("../../assets/img/blog_pics/sl_p5.jpg");
+      }
+
+      @media only screen and (max-width: 600px) {
+        #header_image{
+          content:url("../../assets/img/blog_pics/sl_p5.jpg");
+        }
+      }
+    </style>
+  </head>
+
+  <body onload="load_sidebar()">
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="post blog-post col-lg-8">
+          <div class="container">
+            <div class="post-single">
+              <!-- <div class="post-thumbnail" id="header_2"></div> -->
+              <div class="post-thumbnail"><img src="" id="header_image" alt="..." class="img-fluid"></div>
+              <br>
+              <div class="post-details">
+                <h1 style="font-family:'Playfair Display'">Why should you switch to Bamboo Toothbrush today?</h1>
+
+                <div class="post-body" style="font-family:Amiri; font-size:21px">
+                  <p>
+                  Plastic toothbrushes are made from polypropylene plastic (handle) and nylon (bristles). They are indestructible and sit in our oceans and landfill after being thrown away for many years.<br>
+                  448 million tons of plastic are produced every year! (National Geographic notes)<br>
+                  <br>
+                  FACT: By 2050, the oceans will contain more plastic than fish by weight.<br>
+                  <br>
+                  This is entirely preventable. One simple action at a time.
+                  </p>
+
+                  <p>
+                   <strong> Why Bamboo Toothbrush?</strong>
+                  </p>
+
+                  <p>
+                  Bamboo is a natural plant. It is fully biodegradable and therefore a sustainable resource. Bamboo plants grow quickly, need little care and may thrive without fertilizer or pesticides.<br>
+                  The key difference between a bamboo and plastic toothbrush is the material with which the handle is made.
+                  </p>
+
+                  <p>
+                   You can compost the handles of bamboo toothbrushes if you first remove the nylon bristles. You can also find ways to creatively reuse the toothbrush handles, such as turning them into plant markers for your garden. The bristles (the top part of the brush) are usually made of nylon and must be removed before disposal.
+                  </p>
+
+                  <p>
+                  The bristles are made of nylon and still add to degrading the environment. Ideally, boar hair bristles can be used. But they are not vouched for their unhygienic attributes and not being cruelty free.
+                  Charcoal bristles are a really good option to go with. The activated charcoal has been known to whiten teeth and clean out all the bacteria effectively.
+                  </p>
+
+                  <p>
+                  Amazon sells Bamboo Toothbrushes for around Rs 200 for two which is a pretty good deal.
+                  </p>
+
+                  <p>
+                  You can use a bamboo toothbrush the same way you use your plastic one and replace it as often as you would for your plastic toothbrush!
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+        <aside class="col-lg-4">
+
+          <!-- Latest Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Latest Posts</h3>
+            </header>
+            <div class="blog-posts" id="latest_post_section">
+            </div>
+          </div>
+
+
+          <!-- Insta Posts Widget -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">Latest Instagram Posts</h3>
+            </header>
+            <div class="blog-posts" id="insta_posts_section">
+            </div>
+          </div>
+
+          <!-- Widget [Search Bar Widget]-->
+          <div class="widget search">
+            <header>
+              <h2 class="h6">Get in touch!</h2>
+            </header>
+
+            <form enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSegPSq7BpjHgptHeozjLFOUfFpcR53fywHZ93KtOCc6F_0opw/formResponse?" target="hidden_iframe" onsubmit="submit_func()">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="entry.2005620554" id="entry.2005620554" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="entry.1045781291" id="entry.1045781291" placeholder="Email: name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" name="entry.111406355" id="entry.111406355" required>
+                    <option value="" disabled selected>How did you hear about me?</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <!-- <label>Please tell me more about your inquiry!</label> -->
+                  <textarea class="form-control" name="entry.839337160" id="entry.839337160" rows="3" placeholder="What's on your mind" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info mb-2" style="font-size:18px; border-radius:0rem;margin-left:10px;">Submit</button>
+            </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
