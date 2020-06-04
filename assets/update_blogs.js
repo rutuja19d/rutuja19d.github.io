@@ -14,37 +14,55 @@ String.prototype.format = function () {
 // 6. Don't put comma after last post
 
 
-function load_insta_images(){
+function load_all_blogs(){
 
   // Ignores post 0, just to show the structure required for updating this page
-  // Three details for each post is required: Link to Insta page, Source of Image, and some part of the caption.
-  var posts = {
-    // "0":{'link':"#", 'img_src':"#", 'caption':"."},
-    "1":{'link': "https://www.instagram.com/p/CAacgtxJhDr/",
-         'img_src':"https://instagram.fbom18-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/99111342_108922540702754_1920149122972883120_n.jpg?_nc_ht=instagram.fbom18-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=OG6nO42AadYAX-LJJny&oh=9227281c2f2a5e445daea40f9a57e362&oe=5EF36235",
-         'caption':"Pastel colours always stand out."},
-    "2":{'link': "https://www.instagram.com/p/CAFx6MZp8ZD/",
-        'img_src':"https://instagram.fbom18-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/97370907_952730725157218_7564860030487757801_n.jpg?_nc_ht=instagram.fbom18-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=nBjotdck2P8AX8PzmXR&oh=5e4988eae917d720e02d0fd692859007&oe=5EF36BDF",
-        'caption':"Who would have thought that Quarantine birthday can be the best birthday ever!"},
-    "3":{'link': "https://www.instagram.com/p/B__yzPFpYfX/",
-         'img_src':"https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/96787855_336155107351059_1777086886480529196_n.jpg?_nc_cat=101&_nc_sid=8ae9d6&_nc_ohc=iXHqoWeTpHAAX9gGUjx&_nc_ht=scontent-frt3-2.cdninstagram.com&oh=1afcac1d222f587c7f36cca0a2a032ec&oe=5EEB04BA",
-         'caption':"Open pores- my oldest friend!"}
-  }
+  // Four details for each post is required: Name of the blog file (without .html extension), Source of Image (check how the path is mentioned in examples),
+  // category('HEALTHY LIVING' or 'SUSTAINABLE LIVING' ONLY), title that you want to appear on the main blog page.
+  var blog_posts = {
+    // "0":{'filename':"#", 'img_src':"#", 'category':".", 'title':''},
+    "1":{'filename': "Drink_Green_Tea",
+         'img_src':'./assets/img/blog_pics/p6.jpg',
+         'category':"HEALTHY LIVING",
+          'title': 'Drink Green Tea for weight loss'},
+    "2":{'filename': "CRUELTY_FREE_Make_Up_Brands",
+         'img_src':'./assets/img/blog_pics/sl_p4.jpg',
+         'category':"SUSTAINABLE LIVING",
+          'title': '7 popular CRUELTY FREE Make Up Brands in India'}
+    }
 
-  for (var key in posts){
+  for (var key in blog_posts){
 
-    link = posts[key]["link"];
-    src = posts[key]["img_src"];
-    caption = posts[key]["caption"];
+    filename = blog_posts[key]["filename"];
+    img_src = blog_posts[key]["img_src"];
+    category = blog_posts[key]["category"];
+    title = blog_posts[key]["title"];
 
-    var new_post=`<a href="{}" target="_blank">
-                    <div class="item d-flex align-items-center">
-                      <div class="image"><img src="{}" alt="..." class="img-fluid"></div>
-                      <div class="title"><strong>{}</strong></div>
-                    </div>
-                  </a>`.format(link, src, caption);
+    var new_post =`<div class="collection-item-6 w-dyn-item w-col w-col-2">
+                      <a data-w-id="54a2ea44-ecc4-7f9d-887a-ea450ab9597f" href="/blog/post?{}" class="link-block-7 w-inline-block">
+                          <div style="background-image: url({}); filter: brightness(90%);" class="background-for-blog-posts-holder"></div>
+                          <div class="content-holder-blog-posts shorter">
+                              <div class="category-holder">
+                                  <div class="category-blog-post">{}</div>
+                                  <div class="category-line"></div>
+                              </div>
+                              <h1 class="home---blogpost-title bigger-font">{}</h1>
+                          </div>
+                      </a>
+                  </div>`.format(filename, img_src, category, title);
 
-    var x = document.getElementById("insta_posts_section").innerHTML;
-    document.getElementById("insta_posts_section").innerHTML = x+new_post;
+
+    var content = document.getElementById("ALL_blogs").innerHTML;
+    document.getElementById("ALL_blogs").innerHTML = content + new_post;
+
+    if(category=="HEALTHY LIVING"){
+      var content = document.getElementById("HL_blogs").innerHTML;
+      document.getElementById("HL_blogs").innerHTML = content + new_post;
+    }
+
+    if(category=="SUSTAINABLE LIVING"){
+      var content = document.getElementById("SL_blogs").innerHTML;
+      document.getElementById("SL_blogs").innerHTML = content + new_post;
+    }
   }
 }
