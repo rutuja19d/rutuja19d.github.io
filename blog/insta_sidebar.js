@@ -21,13 +21,13 @@ function load_insta_images(){
   var posts = {
     // "0":{'link':"#", 'img_src':"#", 'caption':"."},
     "1":{'link': "https://www.instagram.com/p/CA7IicjpcN2/",
-         'img_src':"../assets/Instagram/index1.jpg",
+         'img_src':"../../assets/Instagram/index1.jpg",
          'caption':"Missing all the..."},
     "2":{'link': "https://www.instagram.com/p/CA9iNVkpeIr/",
-        'img_src':"../assets/Instagram/index2.jpg",
+        'img_src':"../../assets/Instagram/index2.jpg",
         'caption':"Remember my previous post on 5 cruelty free makeup brands in India?"},
     "3":{'link': "https://www.instagram.com/p/CBARdzIpKbS/",
-         'img_src':"../assets/Instagram/index3.jpg",
+         'img_src':"../../assets/Instagram/index3.jpg",
          'caption':"DRINKING TURMERIC WATER EVERYDAY!"}
   }
 
