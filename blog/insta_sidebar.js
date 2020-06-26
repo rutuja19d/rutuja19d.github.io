@@ -20,15 +20,15 @@ function load_insta_images(){
   // Three details for each post is required: Link to Insta page, Source of Image, and some part of the caption.
   var posts = {
     // "0":{'link':"#", 'img_src':"#", 'caption':"."},
-    "1":{'link': "https://www.instagram.com/p/CAacgtxJhDr/",
-         'img_src':"https://instagram.fbom18-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/99111342_108922540702754_1920149122972883120_n.jpg?_nc_ht=instagram.fbom18-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=OG6nO42AadYAX-LJJny&oh=9227281c2f2a5e445daea40f9a57e362&oe=5EF36235",
-         'caption':"Pastel colours always stand out."},
-    "2":{'link': "https://www.instagram.com/p/CAFx6MZp8ZD/",
-        'img_src':"https://instagram.fbom18-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/97370907_952730725157218_7564860030487757801_n.jpg?_nc_ht=instagram.fbom18-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=nBjotdck2P8AX8PzmXR&oh=5e4988eae917d720e02d0fd692859007&oe=5EF36BDF",
-        'caption':"Who would have thought that Quarantine birthday can be the best birthday ever!"},
-    "3":{'link': "https://www.instagram.com/p/B__yzPFpYfX/",
-         'img_src':"https://scontent-frt3-2.cdninstagram.com/v/t51.2885-15/96787855_336155107351059_1777086886480529196_n.jpg?_nc_cat=101&_nc_sid=8ae9d6&_nc_ohc=iXHqoWeTpHAAX9gGUjx&_nc_ht=scontent-frt3-2.cdninstagram.com&oh=1afcac1d222f587c7f36cca0a2a032ec&oe=5EEB04BA",
-         'caption':"Open pores- my oldest friend!"}
+    "1":{'link': "https://www.instagram.com/p/CA7IicjpcN2/",
+         'img_src':"../assets/Instagram/index1.jpg",
+         'caption':"Missing all the..."},
+    "2":{'link': "https://www.instagram.com/p/CA9iNVkpeIr/",
+        'img_src':"../assets/Instagram/index2.jpg",
+        'caption':"Remember my previous post on 5 cruelty free makeup brands in India?"},
+    "3":{'link': "https://www.instagram.com/p/CBARdzIpKbS/",
+         'img_src':"../assets/Instagram/index3.jpg",
+         'caption':"DRINKING TURMERIC WATER EVERYDAY!"}
   }
 
   for (var key in posts){
