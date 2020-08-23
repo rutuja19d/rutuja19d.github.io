@@ -20,15 +20,15 @@ function load_insta_images(){
   // Three details for each post is required: Link to Insta page, Source of Image, and some part of the caption.
   var posts = {
     // "0":{'link':"#", 'img_src':"#", 'caption':"."},
-    "1":{'link': "https://www.instagram.com/p/CA7IicjpcN2/",
+    "1":{'link': "https://www.instagram.com/p/CEMjtbupRkv/",
          'img_src':"../../assets/Instagram/index1.jpg",
-         'caption':"Missing all the..."},
-    "2":{'link': "https://www.instagram.com/p/CA9iNVkpeIr/",
+         'caption':"HAPPYYY GANPTIIII!"},
+    "2":{'link': "https://www.instagram.com/p/CEJpex-JtUB/",
         'img_src':"../../assets/Instagram/index2.jpg",
-        'caption':"Remember my previous post on 5 cruelty free makeup brands in India?"},
-    "3":{'link': "https://www.instagram.com/p/CBARdzIpKbS/",
+        'caption':"Lovee this outfit from @lifestylestores"},
+    "3":{'link': "https://www.instagram.com/p/CEGgGEuJOP8/",
          'img_src':"../../assets/Instagram/index3.jpg",
-         'caption':"DRINKING TURMERIC WATER EVERYDAY!"}
+         'caption':"What if the whole world was made of pastel colours?"}
   }
 
   for (var key in posts){
